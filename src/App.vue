@@ -1,26 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <RodapeComponent />
+    <CalculatorComponent />
+    <CabecalhoComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CabecalhoComponent from './components/CabecalhoComponent.vue';
+import CalculatorComponent from './components/CalculatorComponent.vue';
+import RodapeComponent from './components/RodapeComponent.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { RodapeComponent, CabecalhoComponent, CalculatorComponent }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
